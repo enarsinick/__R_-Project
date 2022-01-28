@@ -3,12 +3,15 @@ pipeline{
         stages{
             stage('Build'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test "
+                    dir('~/.jenkins/workspace/TestPipeline') {
+                        sh "npm install"
+                        sh "npm run start"
+                    }
                 }
             }
-            stage('Make files') {
+            stage('Completion') {
                 steps {
-                    sh "touch ~/jenkins-tutorial-test/file1.txt"
+                    echo "Completed build"
                 }
             }
         }
