@@ -9,7 +9,7 @@ const Home = () => {
     const [loaded, setLoaded] = useState(false);
 
     const getData = () => {
-        axios.get("http://localhost:5015/beers/readAll")
+        axios.get("http://18.134.207.254:5015/beers/readAll")
             .then(response => {
                 setLoaded(true);
                 setData(response.data);

@@ -28,7 +28,7 @@ const CreateProduct = () => {
     
         document.querySelector("#createForm").reset();
 
-        axios.post("http://localhost:5015/beers/create", data)
+        axios.post("http://18.134.207.254:5015/beers/create", data)
             .then(response => console.log(response))
             .catch(err => console.log(err))
             
