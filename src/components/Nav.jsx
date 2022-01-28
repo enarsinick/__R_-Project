@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
     return ( 
         <nav>
-            <h2>Menu</h2>
+            <h2>Menu Here</h2>
             <Link to='/'>
                 <img src='https://static.vecteezy.com/system/resources/thumbnails/000/627/703/small/illust58-6618-01.jpg' alt='Home' width={35} height={35}/>
             </Link>
